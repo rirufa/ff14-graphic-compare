@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="">
+	<meta name="robots" content="all">
+	<title>ff14の顔タイプ比較</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script type="text/javascript" src="jquery.images-compare.js"></script>
+	<script type="text/javascript" src="image-load.js"></script>
+	<link rel="stylesheet" href="images-compare.css">
+</head>
+<body>
+	<select id="race-selector" name="race">
+		<option value="アウラゼラ女">アウラゼラ女</option>
+		<option value="アウラゼラ男">アウラゼラ男</option>
+		<option value="アウラレン女">アウラレン女</option>
+		<option value="アウラレン男">アウラレン男</option>
+		<option value="サンシーカー女">サンシーカー女</option>
+		<option value="サンシーカー男">サンシーカー男</option>
+		<option value="シェーダー女">シェーダー女</option>
+		<option value="シェーダー男">シェーダー男</option>
+		<option value="ゼーヴォルフ女">ゼーヴォルフ女</option>
+		<option value="ゼーヴォルフ男">ゼーヴォルフ男</option>
+		<option value="デューンフォーク女">デューンフォーク女</option>
+		<option value="デューンフォーク男">デューンフォーク男</option>
+		<option value="ハイランダー女">ハイランダー女</option>
+		<option value="ハイランダー男">ハイランダー男</option>
+		<option value="フォレスター女">フォレスター女</option>
+		<option value="フォレスター男">フォレスター男</option>
+		<option value="プレーンフォーク女">プレーンフォーク女</option>
+		<option value="プレーンフォーク男">プレーンフォーク男</option>
+		<option value="ヘリオン男">ヘリオン男</option>
+		<option value="ミッドランダー女">ミッドランダー女</option>
+		<option value="ミッドランダー男">ミッドランダー男</option>
+		<option value="ムーンキーパー女">ムーンキーパー女</option>
+		<option value="ムーンキーパー男">ムーンキーパー男</option>
+		<option value="ラヴァ・ヴィエラ女">ラヴァ・ヴィエラ女</option>
+		<option value="ラヴァ・ヴィエラ男">ラヴァ・ヴィエラ男</option>
+		<option value="ロスト男">ロスト男</option>
+		<option value="ローエンガルデ女">ローエンガルデ女</option>
+		<option value="ローエンガルデ男">ローエンガルデ男</option>
+		<option value="ヴィナ・ヴィエラ女">ヴィナ・ヴィエラ女</option>
+		<option value="ヴィナ・ヴィエラ男">ヴィナ・ヴィエラ男</option>
+	</select>
+	<button id="select_image_button" type="button">選択</button>
+	<p>１顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face1.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face1.webp">
+		</div>
+	</div>
+	<p>２顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face2.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face2.webp">
+		</div>
+	</div>
+	<p>３顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face3.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face3.webp">
+		</div>
+	</div>
+	<p>４顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face4.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face4.webp">
+		</div>
+	</div>
+	<p>５顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face5.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face5.webp">
+		</div>
+	</div>
+	<p>６顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face6.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face6.webp">
+		</div>
+	</div>
+	<p>７顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face7.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face7.webp">
+		</div>
+	</div>
+	<p>８顔</p>
+	<div class="myImageCompare">
+		<div style="display: none;">
+			<img src="default.png" alt="Before" data-type="endwalker" data-src="face8.webp">
+		</div>
+		<div>
+			<img src="default.png" alt="After" data-type="dawntrail"  data-src="face8.webp">
+		</div>
+	</div>
+</body>
+</html>

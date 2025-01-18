@@ -1,0 +1,9 @@
+# 使い方
+# 画像があるフォルダー以下のコマンドを1行ずつ貼り付けてください。
+# ImageMagick-7.1.1-Q8以降が必要になります。
+# 面倒ならps1とすればそのまま実行できます。
+
+get-item */*/* -filter *.png| ForEach-Object { echo $_.fullName }
+get-item */*/* -filter *.png | ForEach-Object { Start-Process -FilePath "C:\Program Files\ImageMagick-7.1.1-Q8\magick.exe " -ArgumentList $_.fullName , $_.fullName.Replace('png','webp') }
+get-item */*/* -filter *.png | ForEach-Object { remove-item $_.fullName }
+
